@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="edu.uw.tcss450.dmfriedrich.team_5_tcss_450.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_messaging"
+        android:name="edu.uw.tcss450.dmfriedrich.team_5_tcss_450.ui.chat.ChatFragment"
+        android:label="@string/title_messaging"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="chatId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_weather"
+        android:name="edu.uw.tcss450.dmfriedrich.team_5_tcss_450.ui.weather.WeatherFragment"
+        android:label="@string/title_weather"
+        tools:layout="@layout/fragment_weather" >
+        <action
+            android:id="@+id/action_navigation_weather_to_mapFargment"
+            app:destination="@id/navigation_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_my_account"
+        android:name="edu.uw.tcss450.dmfriedrich.team_5_tcss_450.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="edu.uw.tcss450.dmfriedrich.team_5_tcss_450.ui.location.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFargment_to_navigation_weather"
+            app:destination="@id/navigation_weather" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_room_list"
+        android:name="edu.uw.tcss450.dmfriedrich.team_5_tcss_450.ui.roomlist.RoomListFragment"
+        android:label="Chatrooms"
+        tools:layout="@layout/fragment_room_list">
+        <action
+            android:id="@+id/action_navigation_room_list_to_navigation_messaging"
+            app:destination="@id/navigation_messaging" />
+    </fragment>
+</navigation>

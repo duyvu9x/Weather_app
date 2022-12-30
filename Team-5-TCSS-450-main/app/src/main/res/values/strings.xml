@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Team-5-TCSS-450</string>
+    <string name="title_home">Home</string>
+    <string name="title_messaging">Messaging</string>
+    <string name="title_weather">Weather</string>
+    <string name="title_map">Map</string>
+    <string name="title_account">My Account</string>
+    <string name="hint_first">First Name</string>
+    <string name="hint_last">Last Name</string>
+    <string name="hint_nickname">Nickname</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_again">Retype Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_register_short">Register</string>
+    <string name ="go_back">go back</string>
+    <string name ="search_text">search</string>
+    <string name="base_url_service">https://rmonto6-tcss450-project-auth.herokuapp.com/</string>
+    <string name="base_url_auth">https://rmonto6-tcss450-project-auth.herokuapp.com/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="label_home">Welcome %1$s.</string>
+    <string name="view_contact">Delete Contact</string>
+    <string name="label_location">\"\"</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="switch_sign_in">Stay Signed in</string>
+    <string name="keys_shared_prefs">My Auth App Shared Prefs</string>
+    <string name="keys_prefs_jwt">Sharded Prefs JWT</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="channel_name">test</string>
+    <string name="view_chatroom">View Chatroom</string>
+
+
+</resources>
